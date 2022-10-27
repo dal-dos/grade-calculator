@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\stylesheets\calculator.css">
+    <link rel="shortcut icon" type="image/png" href=".\favicon.ico" />
+    <title>CourSys - Formula Tester</title>
+    <script src=".\scripts\calculator.js" defer></script>
+</head>
+<body>
+    <div class="body1" id="b1t">
+        <div class="body2" id="b2t">
+            <header id="h1">
+                Grade Calculator
+            </header>
+            <div class="body3" id="b3t">
+                <main>
+                    <header id="h2">
+                        Activities
+                    </header>
+                    <p id="p1">Give grades to the numeric activites:</p>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Short Name</th>
+                            <th>Weight</th>
+                            <th>Grade</th>
+                            <th id="percent">Percent</th>
+                        </tr>
+                        <tr>
+                            <td>Activity 1</td>
+                            <td>A1</td>
+                            <td><form><input id="weightA1" type="number" class="tablebox"></form></td>
+                            <td><form><input type="number" class="tablebox" id="gradeTopA1" oninput="percentA1func()">  /</form><form class="form1"><input type="number" class="tablebox" id="gradeBotA1" oninput="percentA1func()"></form></td>
+                            <td id="percentA1"></td>
+                        </tr>
+                        <tr>
+                            <td>Activity 2</td>
+                            <td>A2</td>
+                            <td><form><input id="weightA2" type="number" class="tablebox"></form></td>
+                            <td><form><input type="number" class="tablebox" id="gradeTopA2" oninput="percentA2func()">  /</form><form class="form1"><input type="number" class="tablebox" id="gradeBotA2" oninput="percentA2func()"></form></td>
+                            <td id="percentA2"></td>
+                        </tr>
+                        <tr>
+                            <td>Activity 3</td>
+                            <td>A3</td>
+                            <td><form><input id="weightA3" type="number" class="tablebox"></form></td>
+                            <td><form><input type="number" class="tablebox" id="gradeTopA3" oninput="percentA3func()">  /</form><form class="form1"><input type="number" class="tablebox" id="gradeBotA3" oninput="percentA3func()"></form></td>
+                            <td id="percentA3"></td>
+                        </tr>
+                        <tr>
+                            <td>Activity 4</td>
+                            <td>A4</td>
+                            <td><form><input id="weightA4" type="number" class="tablebox"></form></td>
+                            <td><form><input type="number" class="tablebox" id="gradeTopA4" oninput="percentA4func()">  /</form><form class="form1"><input type="number" class="tablebox" id="gradeBotA4" oninput="percentA4func()"></form></td>
+                            <td id="percentA4"></td>
+                        </tr>
+                    </table>
+                    <footer id="f1">
+                        Result
+                    </footer>
+                    <b id="resultEnd">  </b>
+                    <footer>
+                        <form id="button1"><input class="buttons" type="button" value="MEAN"></form><form id="button2"><input class="buttons" type="button" value="WEIGHTED"></form>
+                    </footer>
+                    <footer>
+                        <form id="button3"><input class="buttons" type="button" value="ADD ROWS"></form><form id="button4"><input class="buttons" type="button" value="RESET"></form>
+                    </footer>
+                </main>
+                <table id="tableA5">
+                    <tbody id="tbodyA5">
+                        <tr>
+                            <th>Name</th>
+                            <th>Short Name</th>
+                            <th>Weight</th>
+                            <th>Grade</th>
+                            <th id="percent">Percent</th>
+                        </tr>
+                        <tr>
+                            <td>Activity 5</td>
+                            <td>A5</td>
+                            <td><form><input id="weightA5" type="number" class="tablebox"></form></td>
+                            <td><form><input type="number" class="tablebox" id="gradeTopA5" oninput="percentA5func()">  /</form><form class="form1"><input type="number" class="tablebox" id="gradeBotA5" oninput="percentA5func()"></form></td>
+                            <td id="percentA5"></td>
+                        </tr>
+                        <tr>
+                            <td>Activity 6</td>
+                            <td>A6</td>
+                            <td><form><input id="weightA6" type="number" class="tablebox"></form></td>
+                            <td><form><input type="number" class="tablebox" id="gradeTopA6" oninput="percentA6func()">  /</form><form class="form1"><input type="number" class="tablebox" id="gradeBotA6" oninput="percentA6func()"></form></td>
+                            <td id="percentA6"></td>
+                        </tr>
+                        <tr>
+                            <td>Activity 7</td>
+                            <td>A7</td>
+                            <td><form><input id="weightA7" type="number" class="tablebox"></form></td>
+                            <td><form><input type="number" class="tablebox" id="gradeTopA7" oninput="percentA7func()">  /</form><form class="form1"><input type="number" class="tablebox" id="gradeBotA7" oninput="percentA7func()"></form></td>
+                            <td id="percentA7"></td>
+                        </tr>
+                        <tr>
+                            <td>Activity 8</td>
+                            <td>A8</td>
+                            <td><form><input id="weightA8" type="number" class="tablebox"></form></td>
+                            <td><form><input type="number" class="tablebox" id="gradeTopA8" oninput="percentA8func()">  /</form><form class="form1"><input type="number" class="tablebox" id="gradeBotA8" oninput="percentA8func()"></form></td>
+                            <td id="percentA8"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    </body>
+</html>
